@@ -9,5 +9,9 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// your code here
+	$('.likeBtn').click(function() {
+		gtag('event', 'click', {
+			'event_category': 'like'
+		});
+	});
 }
